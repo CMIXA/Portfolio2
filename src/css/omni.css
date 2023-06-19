@@ -1,0 +1,12 @@
+.project-container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.project-container img {
+  width: 100%;
+}

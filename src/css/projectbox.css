@@ -1,0 +1,53 @@
+.square {
+  position: relative;
+  /* width: 500px; */
+  width: 98%;
+  height: 400px;
+  /* background-color: rgb(89, 136, 136); */
+  /* background-image: url("Omni.png"); */
+  background-position: center;
+  background-size: cover;
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.square:hover {
+  filter: brightness(0.7);
+}
+
+.square-container {
+  width: 90%;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.square:hover .text {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .square-container {
+    /* display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center; */
+    /* width: 100%; */
+
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.page-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 800ms, transform 800ms; /* Increase duration to make it smoother and slightly slower */
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(0); /* Add transform property to prevent flashing */
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(20px); /* Add transform property to prevent flashing */
+  transition: opacity 800ms, transform 800ms; /* Increase duration to make it smoother and slightly slower */
+}

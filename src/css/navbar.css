@@ -1,0 +1,271 @@
+/* .nav {
+  background-color: rgb(14, 14, 17);
+  position: relative;
+  transition: all 0.5s ease-out;
+  z-index: 10;
+}
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.096);
+  display: flex;
+  height: 96px;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.navbar-name {
+  font-size: 32px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.navbar-link {
+  margin-right: 10px;
+} */
+
+.login-paid {
+  align-items: center;
+  display: flex;
+  text-align: right;
+}
+
+#right-link {
+  /* font-size: 0.875rem; */
+  margin-left: 20px;
+  /* text-decoration: none; */
+}
+
+#right-link button {
+  /* font-size: 0.875rem; */
+  margin-right: 0px;
+  /* text-decoration: none; */
+}
+
+.login-paid button {
+  /* background: linear-gradient(
+    99.49deg,
+    #71788b 14.51%,
+    rgba(48, 51, 59, 0.788) 77.41%
+  ); */
+  background: #6e657a;
+  border-radius: 30px;
+  border: #3d3d3d;
+  font-size: 0.875rem;
+  padding: 12px 24px;
+}
+
+.login-paid button:hover {
+  background: #9b8dad;
+}
+
+.nav {
+  /* background-color: rgb(14, 14, 17); */
+  position: relative;
+  transition: all 0.5s ease-out;
+  z-index: 10;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 32px;
+}
+
+.navbar-dropdown {
+  position: relative;
+}
+
+.navbar-item {
+  height: 90%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 16px;
+  list-style-type: none;
+  margin: 0;
+  width: 280px;
+}
+
+.navbar a:hover {
+  color: #cacaca;
+}
+
+.navbar-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  /* box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.016); */
+  display: flex;
+  /* height: 96px; */
+  justify-content: center;
+  /* padding: 20px; */
+}
+
+.navlinks {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navlinks a {
+  font-size: 1rem;
+  list-style: none;
+  margin: 0 32px;
+  text-decoration: none;
+}
+
+.navlinks .navbar-item {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.social-media {
+  width: 20px;
+}
+
+.title-container {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  width: 180px;
+}
+
+/* H MENU */
+
+/* Hamburger menu styles */
+/* .hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: transform 0.3s ease-in-out;
+} */
+
+/* Mobile navigation styles */
+/* .mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(14, 14, 17);
+  padding: 32px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-navlinks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-navlinks li {
+  margin-bottom: 24px;
+}
+
+.mobile-navlinks a {
+  color: #fff;
+  font-size: 1.25rem;
+  text-decoration: none;
+} */
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu-line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+/* Media query for hamburger menu */
+@media screen and (max-width: 900px) {
+  .navlinks {
+    display: none;
+  }
+
+  .navlinks.active {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    /* width: 20%; */
+    /* transform: translateX(50%); */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  button {
+    margin-bottom: 0;
+  }
+}
+
+/* Media query for hamburger menu */
+@media screen and (max-width: 768px) {
+  .login-paid {
+    display: none;
+  }
+}
